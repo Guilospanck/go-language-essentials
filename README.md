@@ -13,6 +13,7 @@ go mod init {module_name}
 ```
 Usually ```{module_name}``` will be where your application is located, something like ```github.com/Guilospanck/GoLanguageEssentials```.
 This command is similar to *yarn init*
+
 ---
 #### Import modules from the internet:
 You can go to the [Go dev](https://pkg.go.dev/) website and search for the package you need (something similar to *yarn*, *npm*, *pypi*). Search for

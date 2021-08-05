@@ -1,4 +1,4 @@
-package main
+package multipleresults
 
 import (
 	"fmt"
@@ -13,8 +13,10 @@ func swap(x, y string) (string, string) {
 
 // the := (short assignment statement) can be used in place of a 'var' declaration with implicit type. Outside a function,
 // every statement begins with a keyword (var, func, and so on), and so the := construct is not available.
-func main() {
+
+// function named with Uppercase will be exported by default to those who import our package.
+func MultipleResults() string {
 	a, b := swap("hello", "world")
 	fmt.Println(a, b)
-	fmt.Println(quote.Glass())
+	return quote.Glass()
 }

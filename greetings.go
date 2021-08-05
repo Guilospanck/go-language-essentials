@@ -20,6 +20,39 @@ func Greeting(name string) (string, error) {
 	return message, nil
 }
 
+// Greetings returns a map that associates each of the named people
+// with a greeting message.
+func Greetings(names []string) (map[string]string, error) {
+	// a map to associate names with messages.
+	//
+	// syntax: messages := make(map[key-type]value-type)   which is equal to:  messages = map[key-type]value-type{}
+	//
+	// or, if you wanna initialize it with some data:
+	//
+	// messages := map[string]string{
+	//		"Guilospanck": "Hello",
+	//		"Gui": "Hey",
+	// }
+
+	messages := make(map[string]string)
+
+	// Loop through the received slice of names, calling
+	// the Greeting function to get a message for each name.
+	// syntax: for key, value := range names  OR    for index, value := range names
+	for _, name := range names {
+		message, err := Greeting(name)
+		if err != nil {
+			return nil, err
+		}
+
+		// In the map, associate the retrieved message with
+		// the name.
+		messages[name] = message
+	}
+
+	return messages, nil
+}
+
 // init sets initial values for variables used in the function.
 // Go executes init functions automatically at program startup,
 // after global variables have been initialized.

@@ -31,6 +31,18 @@ go mod tidy
 go run file.go
 ```
 
+#### Testing in Go:
+- You have to create a new file with the name of the file you are testing, appending ```_test``` at the end. Example:
+```
+greetings.go  => greetings_test.go
+```
+To run your tests, go to the directory wanted and run:
+```bash
+go test
+or
+go test -v  # to verbose
+```
+
 ---
 #### Some observations about Golang:
 - The first line when you're writing a code in ```Go``` is ```package {packageName}```. It must exists only a package per directory. If you wanna have a different package name for a file, you must change its directory. Every Golang program must have a file in which there is the main package with the ```main``` function.

@@ -33,8 +33,11 @@ go run file.go
 
 ---
 #### Some observations about Golang:
-- The first line when you're writing a code in ```Go``` is ```package {packageName}```. It must exists only a package per directory. If you wanna have a different package name for a file, you must change its directory. Every Golang program must have a file in which there is the main package with the ```main``` function.S
+- The first line when you're writing a code in ```Go``` is ```package {packageName}```. It must exists only a package per directory. If you wanna have a different package name for a file, you must change its directory. Every Golang program must have a file in which there is the main package with the ```main``` function.
 
 - Functions that begin with an upper-case letter are *exported* by default, hence it can be used in other packages that import our package.
 
 - The ```:=``` (*short assignment statement*) can be used in place of a ```var``` declaration with implicit type. Outside a function, every statement begins with a keyword (var, func, and so on), and so the ```:=``` construct is not available.
+
+- Each source file can define its own ```init``` function to set up whatever state is required (actually, each file can have multiple ```init``` functions).
+```init``` is called after all the variable declarations in the package have evaluated their initializers, and those are evaluated only after all the imported packages have been initialized.

@@ -71,3 +71,22 @@ GoLanguageEssentials    ({binary_name})
 
 - Each source file can define its own ```init``` function to set up whatever state is required (actually, each file can have multiple ```init``` functions).
 ```init``` is called after all the variable declarations in the package have evaluated their initializers, and those are evaluated only after all the imported packages have been initialized.
+
+#### Go's basic types:
+- <code>bool</code>
+- <code>string</code>
+- <code>int</code> (all positive and negative values) =>  (int8 16 32 64)
+- <code>uint</code> (only positive values) => (uint8 16 32 64 ptr)
+- <code>byte</code> (alias for <code>uint8</code>)
+- <code>rune</code> (alias for <code>int32</code>. It represents a Unicode code point)
+- <code>float32</code> <code>float64</code>
+- <code>complex64</code> <code>complex128</code>
+
+For 32-bit systems, ```int``` ```uint``` and ```uintptr``` are 32 bits wide. For 64-bit systems they are 64 bits wide (usually).
+
+##### Zero values:
+Variables declared without an explicit initial value are given their *zero value*. The zero value is:
+- <code>0</code> for numeric types;
+- <code>false</code> for the boolean type, and
+- <code>""</code> (the empty string) from strings.
+

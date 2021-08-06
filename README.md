@@ -43,6 +43,24 @@ or
 go test -v  # to verbose
 ```
 
+#### Compiling and installing the application
+- To generate a binary executable, you can run (in your file directory):
+```bash
+go build
+```
+This will generate a binary file with the name of you Module. You can run this binary file as it follows:
+```bash
+./GoLanguageEssentials    (./{binary_name})
+```
+But now, to be able to run it from anywhere in your computer, you must install it:
+```bash
+go install
+```
+Now, you can run it from anywhere just typing:
+```bash
+GoLanguageEssentials    ({binary_name})
+```
+
 ---
 #### Some observations about Golang:
 - The first line when you're writing a code in ```Go``` is ```package {packageName}```. It must exists only a package per directory. If you wanna have a different package name for a file, you must change its directory. Every Golang program must have a file in which there is the main package with the ```main``` function.

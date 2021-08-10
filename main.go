@@ -38,4 +38,10 @@ func main() {
 	fmt.Println(LoopContinued())
 	fmt.Println(WhileFunction())
 	fmt.Println(LoopForever())
+
+	fmt.Println("===================")
+	// Prints for If result
+	fmt.Println(NormalIf(2, 5, 40))
+	fmt.Println(IfShorthanded(2, 5, 40))
+	fmt.Println(IfShorthandedWithElse(2, 5, 30))
 }

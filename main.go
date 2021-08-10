@@ -44,4 +44,9 @@ func main() {
 	fmt.Println(NormalIf(2, 5, 40))
 	fmt.Println(IfShorthanded(2, 5, 40))
 	fmt.Println(IfShorthandedWithElse(2, 5, 30))
+
+	fmt.Println(" Square root: ===================")
+	// Square root.go
+	// fmt.Println(Sqrt(25))
+	fmt.Println(SqrtAutomatic(25))
 }

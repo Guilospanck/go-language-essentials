@@ -31,4 +31,11 @@ func main() {
 	// if no error was returned, print the returned messages
 	// to the console.
 	fmt.Println(messages)
+
+	fmt.Println("===================")
+	// Prints for Loop result
+	fmt.Println(Loop())
+	fmt.Println(LoopContinued())
+	fmt.Println(WhileFunction())
+	fmt.Println(LoopForever())
 }

@@ -49,4 +49,10 @@ func main() {
 	// Square root.go
 	// fmt.Println(Sqrt(25))
 	fmt.Println(SqrtAutomatic(25))
+
+	fmt.Println(" Switch: ===================")
+	// switch.go
+	Switch(1)
+	SwitchShorthanded()
+	SwitchWithNoCondition()
 }

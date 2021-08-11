@@ -55,4 +55,12 @@ func main() {
 	Switch(1)
 	SwitchShorthanded()
 	SwitchWithNoCondition()
+
+	fmt.Println(" Defer: ===================")
+	// defer.go
+	EvaluatedNormalRuntimeExecutedAfterReturn()
+	LastInFirstOut()
+	fmt.Println(NamedReturnValues())
+	fmt.Println(NoNamedReturnValues())
+	fmt.Println(NoNamedReturnValues2())
 }

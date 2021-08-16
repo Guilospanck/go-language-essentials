@@ -68,4 +68,8 @@ func main() {
 	// pointers.go
 	Pointers()
 
+	fmt.Println(" Structs: ===================")
+	// structs.go
+	StructVertex()
+
 }

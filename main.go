@@ -63,4 +63,9 @@ func main() {
 	fmt.Println(NamedReturnValues())
 	fmt.Println(NoNamedReturnValues())
 	fmt.Println(NoNamedReturnValues2())
+
+	fmt.Println(" Pointers: ===================")
+	// pointers.go
+	Pointers()
+
 }

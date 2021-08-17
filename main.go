@@ -72,4 +72,8 @@ func main() {
 	// structs.go
 	StructVertex()
 
+	fmt.Println(" Arrays: ===================")
+	// arrays.go
+	Arrays()
+
 }

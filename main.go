@@ -76,4 +76,8 @@ func main() {
 	// arrays.go
 	Arrays()
 
+	fmt.Println(" Range: ===================")
+	// range.go
+	RangeFunction()
+
 }

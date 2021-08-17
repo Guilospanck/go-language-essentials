@@ -80,4 +80,8 @@ func main() {
 	// range.go
 	RangeFunction()
 
+	fmt.Println(" Maps: ===================")
+	// maps.go
+	MapFunction()
+
 }

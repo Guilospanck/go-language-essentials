@@ -84,4 +84,12 @@ func main() {
 	// maps.go
 	MapFunction()
 
+	fmt.Println(" Function values: ===================")
+	// function_values.go
+	FunctionValues()
+
+	fmt.Println(" Function Closures: ===================")
+	// function_closures.go
+	FunctionClosure()
+
 }

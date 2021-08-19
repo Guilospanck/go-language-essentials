@@ -92,4 +92,7 @@ func main() {
 	// function_closures.go
 	FunctionClosure()
 
+	fmt.Println(" Fibonacci: ===================")
+	// fibonacci.go
+	ReturnFibo()
 }

@@ -95,4 +95,20 @@ func main() {
 	fmt.Println(" Fibonacci: ===================")
 	// fibonacci.go
 	ReturnFibo()
+
+	fmt.Println(" Methods: ===================")
+	// Methods.go
+	MethodsFunction()
+
+	fmt.Println(" Interface: ===================")
+	// Interface.go
+	InterfaceFunction()
+
+	fmt.Println(" ImplicitInterface: ===================")
+	// ImplicitInterface.go
+	ImplicitInterfaceFunction()
+
+	fmt.Println(" Type Asserts: ===================")
+	// type_asserts.go
+	TypeAssertion()
 }

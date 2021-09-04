@@ -5,7 +5,7 @@
 * - Parallelism: (Independentability) => two lines of customers ordering from two cashiers (each line has its own cashier)
 *
 *
-*   See exercise_equivalent_binary_trees for an implementation of goroutines with channels
+*   ====> See exercise_equivalent_binary_trees for an implementation of goroutines with channels <====
 *
 *  To use goroutine, just add the "go" syntax before a method or function
 *  Example:    go Fibonacci()
@@ -23,7 +23,7 @@
 *       // ok is false if there are no more values to receive and the channel is closed.
 *
 *       The loop
-*       for i := range ch
+*                 for i := range ch
 *       receives values from the channel repeatedly until it is closed.
 *
 *

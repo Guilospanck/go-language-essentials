@@ -1,0 +1,41 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	marks := make(map[string]uint8)
+
+	// add values
+	marks["Rust"] = 75
+	marks["Go"] = 85
+	marks["JavaScript"] = 88
+	marks["C"] = 65
+
+	// length
+	fmt.Printf("Length of the map: %d\n", len(marks))
+
+	// get a single value
+	value, ok := marks["Rust"]
+	if ok {
+		fmt.Printf("You've studied Rust and you got %d%%!\n", value)
+	}
+
+	// remove a value
+	_, hasRust := marks["Rust"]
+	if hasRust {
+		delete(marks, "Rust")
+	}
+	fmt.Printf("Length of the map: %d\n", len(marks))
+
+	// loop through map
+	for subject, mark := range marks {
+		fmt.Printf("For %s you got %d%%!\n", subject, mark)
+	}
+
+	// verify if key exists
+	_, hasGo := marks["Go"]
+	fmt.Printf("Did you study Go? %t\n", hasGo)
+
+}
